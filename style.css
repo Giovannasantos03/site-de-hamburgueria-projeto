@@ -144,6 +144,42 @@ header {
   text-align: center;
 }
 
+/* LINKS DE REDES SOCIAIS */
+.texto p ion-icon {
+  color: #e52528; /* cor dos ícones */
+  font-size: 1.3rem;
+  vertical-align: middle;
+  margin-right: 8px;
+  transition: 0.3s;
+}
+
+.texto a {
+  color: #e52528;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.texto a:hover {
+  color: #b81e1e;
+  text-decoration: underline;
+}
+
+/* EFEITO AO PASSAR O MOUSE NOS ÍCONES */
+.texto p:hover ion-icon {
+  transform: scale(1.2);
+  color: #b81e1e;
+}
+
+/* ORGANIZAÇÃO MELHOR DAS REDES SOCIAIS */
+.texto .social {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  color: black;
+}
+
 
 
 /* RODAPÉ */
