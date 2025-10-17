@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CABEÇALHO */
+header {
+  background-color: #e52528;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #ffd5d5;
+}
+
+/* SEÇÕES */
+.secao {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.titulo-secao {
+  font-family: Arial, sans-serif;
+  color: #e52528;
+  margin-bottom: 30px;
+}
+
+/* CONTAINER DE CARDS */
+.container-cards {
+  display: flex;
+  flex-wrap: wrap;        /* Quebra linha se faltar espaço */
+  justify-content: center; /* Centraliza os cards */
+  gap: 25px;              /* Espaço entre eles */
+}
+
+/* CARD INDIVIDUAL */
+.card {
+  background-color: white;
+  width: 250px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 220px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+button {
+  background-color: #e52528;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 5px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #c11e21;
+}
+
+footer {
+  background-color: #e52528;
+  color: white;
+  text-align: center;
+  padding: 40px;
+  font-size: 0.9rem;
+  margin-top: 60px;
+}

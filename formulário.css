@@ -1,0 +1,141 @@
+/* RESET GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CABEÇALHO */
+header {
+    background-color: #e52528;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #ffd5d5;
+}
+
+/* FUNDO GERAL DA PÁGINA */
+body {
+    background-image: url("img/burguer.avif");
+    background-size: cover;      /* cobre toda a tela */
+    background-position: center; /* centraliza a imagem */
+    background-repeat: no-repeat;
+    min-height: 100vh;           /* garante que cubra a tela toda */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* FORMULÁRIO */
+form {
+    max-width: 600px;            /* largura máxima */
+    width: 90%;                  /* responsivo: ocupa 90% da tela em celulares */
+    margin: 60px auto;           /* centraliza na tela */
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(229, 37, 40, 0.95); /* vermelho com leve transparência */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* sombra suave */
+}
+
+/* CABEÇALHO DO FORMULÁRIO */
+.texto {
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.texto h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.texto p {
+    font-size: 16px;
+    color: #f1d7d7;
+    line-height: 1.4;
+}
+
+/* CAMPOS DO FORMULÁRIO */
+form div {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* RÓTULOS (labels) */
+label {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* CAMPOS DE TEXTO */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ffd5d5;
+    color: #333;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* EFEITO AO CLICAR NO CAMPO */
+input:focus {
+    border: 2px solid white;
+    background-color: #ffe8e8;
+}
+
+/* BOTÃO DE ENVIAR */
+input[type="submit"] {
+    background-color: white;
+    color: #e52528;
+    font-weight: bold;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+/* EFEITO HOVER NO BOTÃO */
+input[type="submit"]:hover {
+    background-color: #ffd5d5;
+    color: #c11e21;
+    transform: scale(1.05);
+}
+
+
+footer {
+  background-color: #e52528;
+  color: white;
+  text-align: center;
+  padding: 40px;
+  font-size: 0.9rem;
+  margin-top: 60px;
+}
